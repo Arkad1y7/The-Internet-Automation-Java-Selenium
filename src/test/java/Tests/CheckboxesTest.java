@@ -6,11 +6,10 @@ import SeleniumBase.SeleniumBaseTest;
 import org.junit.jupiter.api.Test;
 
 public class CheckboxesTest extends SeleniumBaseTest {
+
     @Test
     public void CheckboxesTest() {
-        MainPage mainPage = new MainPage();
-        CheckboxesPage checkboxesPage = new CheckboxesPage();
-        mainPage.clickOnCheckboxes();
-        checkboxesPage.TwoCheckboxes();
+        MainPage.Instance.clickOnCheckboxes();
+        CheckboxesPage.Instance.TwoCheckboxes();
     }
 }

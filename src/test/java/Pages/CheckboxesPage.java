@@ -12,6 +12,8 @@ public class CheckboxesPage extends SeleniumBasePage {
     @FindBy(xpath = "//*[@type='checkbox'][2]")
     private WebElement secondCheckbox;
 
+    public static CheckboxesPage Instance = new CheckboxesPage();
+
     public CheckboxesPage() {
         PageFactory.initElements(driver, this);
     }

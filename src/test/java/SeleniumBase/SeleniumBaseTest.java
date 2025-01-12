@@ -16,7 +16,7 @@ abstract public class SeleniumBaseTest {
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         SeleniumBasePage.setDriver(driver);
         driver.get("http://the-internet.herokuapp.com/");
     }

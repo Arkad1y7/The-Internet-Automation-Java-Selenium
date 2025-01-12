@@ -1,21 +1,19 @@
 package Pages;
 
 import SeleniumBase.SeleniumBasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
-
 
 public class DisappearingElementsPage extends SeleniumBasePage {
-    @FindBy (xpath = "//*[@href='/gallery/']")
-    private WebElement galleryButton;
 
-    public DisappearingElementsPage() {
-        PageFactory.initElements(driver,this);
-    }
+    public static DisappearingElementsPage Instance = new DisappearingElementsPage();
 
     public void buttonIsVisible() {
-
+        try{
+            WebElement galleryButton = driver.findElement(By.xpath("//*[contains(text(), 'Gallery')]"));
+            System.out.println("Element found");
+        } catch (Exception e) {
+            System.out.println("Element not found");
+        }
     }
 }

@@ -6,13 +6,12 @@ import SeleniumBase.SeleniumBaseTest;
 import org.junit.jupiter.api.Test;
 
 public class ChallengingDomTest extends SeleniumBaseTest {
+
     @Test
     public void ChallengingDomTest() {
-        MainPage mainPage = new MainPage();
-        ChallengingDomPage challengingDom = new ChallengingDomPage();
-        mainPage.clickOnChallengingDom();
-        challengingDom.clickBlueButton()
-                .clickRedButton()
-                .clickGreenButton();
+        MainPage.Instance.clickOnChallengingDom();
+        ChallengingDomPage.Instance.clickBlueButton();
+        ChallengingDomPage.Instance.clickRedButton();
+        ChallengingDomPage.Instance.clickGreenButton();
     }
 }

@@ -3,15 +3,12 @@ package Pages;
 import SeleniumBase.SeleniumBasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
-import org.openqa.selenium.support.PageFactory;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 public class AbTestingPage extends SeleniumBasePage {
 
-    public AbTestingPage() {
-        PageFactory.initElements(driver, this);
-    }
+    public static AbTestingPage Instance = new AbTestingPage();
 
     public void WithCookieAfterVisitingPage(){
         driver.get("https://the-internet.herokuapp.com/abtest");

@@ -1,68 +1,41 @@
 package Pages;
 
 import SeleniumBase.SeleniumBasePage;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.By;
 
 public class MainPage extends SeleniumBasePage {
-    @FindBy (xpath = "//*[contains(text(),'A/B Testing')]")
-    private WebElement abLink;
 
-    @FindBy (xpath = "//*[contains(text(), 'Add/Remove Elements')]")
-    private WebElement addRemoveElementsLink;
-
-    @FindBy (xpath = "//*[contains(text(), 'Basic Auth')]")
-    private WebElement basicAuth;
-
-    @FindBy (xpath = "//*[contains(text(), 'Broken Images')]")
-    private WebElement brokenImages;
-
-    @FindBy (xpath = "//*[contains(text(), 'Challenging DOM')]")
-    private WebElement challengingDom;
-
-    @FindBy (xpath = "//*[contains(text(),'Checkboxes')]")
-    private WebElement checkboxes;
-
-    @FindBy (xpath = "//*[contains(text(), 'Context Menu')]")
-    private WebElement contextMenu;
-
-    @FindBy(xpath = "//*[contains(text(),'Disappearing Elements')]")
-    private WebElement disappearingElements;
-
-    public MainPage() {
-        PageFactory.initElements(driver, this);
-    }
-
-    public void clickOnAbLink() {
-        abLink.click();
-    }
+    public static MainPage Instance = new MainPage();
 
     public void clickOnAddRemoveElementsLink() {
-        addRemoveElementsLink.click();
+        driver.findElement(By.xpath("//*[contains(text(), 'Add/Remove Elements')]")).click();
     }
 
     public void clickOnBasicAuth() {
-        basicAuth.click();
+        driver.findElement(By.xpath("//*[contains(text(), 'Basic Auth')]")).click();
     }
 
     public void clickOnBrokenImages() {
-        brokenImages.click();
+        driver.findElement(By.xpath("//*[contains(text(), 'Broken Images')]")).click();
     }
 
     public void clickOnChallengingDom() {
-        challengingDom.click();
+        driver.findElement(By.xpath("//*[contains(text(), 'Challenging DOM')]")).click();
     }
 
     public void clickOnCheckboxes() {
-        checkboxes.click();
+        driver.findElement(By.xpath("//*[contains(text(),'Checkboxes')]")).click();
     }
 
     public void clickOnContextMenu() {
-        contextMenu.click();
+        driver.findElement(By.xpath("//*[contains(text(), 'Context Menu')]")).click();
     }
 
     public void clickOnDisappearingElements() {
-        disappearingElements.click();
+        driver.findElement(By.xpath("//*[contains(text(),'Disappearing Elements')]")).click();
+    }
+
+    public void clickOnDragAndDrop() {
+        driver.findElement(By.xpath("//*[contains(text(),'Drag and Drop')]")).click();
     }
 }

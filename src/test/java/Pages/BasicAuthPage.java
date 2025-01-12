@@ -2,32 +2,25 @@ package Pages;
 
 import SeleniumBase.SeleniumBasePage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import java.awt.*;
 import java.awt.event.KeyEvent;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
 
 public class BasicAuthPage extends SeleniumBasePage {
-    @FindBy(xpath = "//*[@id=\"content\"]/div/p")
-    private WebElement successfulAuthentication;
 
-    public BasicAuthPage() {
-        PageFactory.initElements(driver, this);
-    }
-
-    public boolean isPresent(){
-        return successfulAuthentication.isDisplayed();
-    }
+    public static BasicAuthPage Instance = new BasicAuthPage();
 
     public void robotAuth() throws AWTException {
         Robot robot = new Robot();
+
         admin(robot);
         tab(robot);
         admin(robot);
         enter(robot);
-        assertTrue(isPresent(),"Auth failed");
+
+        String headingText = driver.findElement(By.tagName("h3")).getText();
+        assertThat(headingText, is("Basic Auth"));
     }
 
     void admin(Robot robot) {

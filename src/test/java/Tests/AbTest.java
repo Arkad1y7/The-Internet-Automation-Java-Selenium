@@ -5,18 +5,19 @@ import SeleniumBase.SeleniumBaseTest;
 import org.junit.jupiter.api.Test;
 
 public class AbTest extends SeleniumBaseTest {
-    AbTestingPage abTestingPage = new AbTestingPage();
 
     @Test
     public void abTestAfter() {
-        abTestingPage.WithCookieAfterVisitingPage();
+        AbTestingPage.Instance.WithCookieAfterVisitingPage();
     }
+
     @Test
     public void abTestBefore() {
-        abTestingPage.WithCookieBeforeVisitingPage();
+        AbTestingPage.Instance.WithCookieBeforeVisitingPage();
     }
+
     @Test
     public void abTestWithOptOutUrl() throws InterruptedException {
-        abTestingPage.WithOptOutUrl();
+        AbTestingPage.Instance.WithOptOutUrl();
     }
 }

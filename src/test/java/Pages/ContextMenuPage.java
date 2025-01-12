@@ -1,28 +1,20 @@
 package Pages;
 
 import SeleniumBase.SeleniumBasePage;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class ContextMenuPage extends SeleniumBasePage {
-    @FindBy(xpath = "//*[@id = 'hot-spot']")
-    private WebElement contextMenu;
 
-    public ContextMenuPage() {
-        PageFactory.initElements(driver, this);
-    }
+    public static ContextMenuPage Instance = new ContextMenuPage();
 
     public void clickContextMenu() {
         new Actions(driver)
-                .contextClick(contextMenu)
+                .contextClick(driver.findElement(By.xpath("//*[@id = 'hot-spot']")))
                 .perform();
-
         String alertText = driver.switchTo().alert().getText();
         assertThat(alertText, is(equalTo("You selected a context menu")));
     }

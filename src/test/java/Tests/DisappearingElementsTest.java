@@ -6,12 +6,11 @@ import SeleniumBase.SeleniumBaseTest;
 import org.junit.jupiter.api.Test;
 
 public class DisappearingElementsTest extends SeleniumBaseTest {
+
     @Test
     public void DisappearingElementsTest() {
-        MainPage mainPage = new MainPage();
-        DisappearingElementsPage disappearingElementsPage = new DisappearingElementsPage();
 
-        mainPage.clickOnDisappearingElements();
-        disappearingElementsPage.buttonIsVisible();
+        MainPage.Instance.clickOnDisappearingElements();
+        DisappearingElementsPage.Instance.buttonIsVisible();
     }
 }

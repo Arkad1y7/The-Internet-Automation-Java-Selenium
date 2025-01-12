@@ -11,9 +11,7 @@ public class BasicAuthTest extends SeleniumBaseTest {
 
     @Test
     public void testBasicAuth() throws AWTException {
-        MainPage mainPage = new MainPage();
-        BasicAuthPage basicAuth = new BasicAuthPage();
-        mainPage.clickOnBasicAuth();
-        basicAuth.robotAuth();
+        MainPage.Instance.clickOnBasicAuth();
+        BasicAuthPage.Instance.robotAuth();
     }
 }

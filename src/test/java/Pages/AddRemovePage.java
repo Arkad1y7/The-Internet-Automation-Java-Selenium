@@ -1,29 +1,17 @@
 package Pages;
 
 import SeleniumBase.SeleniumBasePage;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.By;
 
 public class AddRemovePage extends SeleniumBasePage {
-    @FindBy (xpath = "//*[@id=\"content\"]/div/button")
-    private WebElement addButton;
 
-    @FindBy (xpath = "//*[@id=\"elements\"]/button")
-    private WebElement removeButton;
+    public static AddRemovePage Instance = new AddRemovePage();
 
-    public AddRemovePage () {
-        PageFactory.initElements(driver, this);
+    public void addElement() {
+        driver.findElement(By.xpath("//*[@id=\"content\"]/div/button")).click();
     }
 
-    public AddRemovePage addElement() {
-        addButton.click();
-        return this;
+    public void removeElement() {
+        driver.findElement(By.xpath("//*[@id=\"elements\"]/button")).click();
     }
-
-    public AddRemovePage removeElement() {
-        removeButton.click();
-        return this;
-    }
-
 }
