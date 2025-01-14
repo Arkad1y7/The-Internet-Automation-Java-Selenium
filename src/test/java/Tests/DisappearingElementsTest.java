@@ -8,8 +8,7 @@ import org.junit.jupiter.api.Test;
 public class DisappearingElementsTest extends SeleniumBaseTest {
 
     @Test
-    public void DisappearingElementsTest() {
-
+    public void disappearingElementsTest() {
         MainPage.Instance.clickOnDisappearingElements();
         DisappearingElementsPage.Instance.buttonIsVisible();
     }

@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class ChallengingDomTest extends SeleniumBaseTest {
 
     @Test
-    public void ChallengingDomTest() {
+    public void challengingDomTest() {
         MainPage.Instance.clickOnChallengingDom();
         ChallengingDomPage.Instance.clickBlueButton();
         ChallengingDomPage.Instance.clickRedButton();

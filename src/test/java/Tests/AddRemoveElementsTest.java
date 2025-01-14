@@ -9,10 +9,8 @@ public class AddRemoveElementsTest extends SeleniumBaseTest {
 
     @Test
     public void addRemoveElement() {
-        AddRemovePage addRemovePage = new AddRemovePage();
-
         MainPage.Instance.clickOnAddRemoveElementsLink();
-        addRemovePage.Instance.addElement();
-        addRemovePage.Instance.removeElement();
+        AddRemovePage.Instance.addElement();
+        AddRemovePage.Instance.removeElement();
     }
 }

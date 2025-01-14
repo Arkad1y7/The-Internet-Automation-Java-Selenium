@@ -10,7 +10,7 @@ public class AbTestingPage extends SeleniumBasePage {
 
     public static AbTestingPage Instance = new AbTestingPage();
 
-    public void WithCookieAfterVisitingPage(){
+    public void withCookieAfterVisitingPage(){
         driver.get("https://the-internet.herokuapp.com/abtest");
         String headingText = driver.findElement(By.tagName("h3")).getText();
         assertThat(headingText, startsWith("A/B Test"));
@@ -20,19 +20,16 @@ public class AbTestingPage extends SeleniumBasePage {
         assertThat(headingText, is("No A/B Test"));
     }
 
-    public void WithCookieBeforeVisitingPage(){
+    public void withCookieBeforeVisitingPage(){
         driver.get("https://the-internet.herokuapp.com/abtest");
         driver.manage().addCookie(new Cookie("optimizelyOptOut", "true"));
         driver.get("http://the-internet.herokuapp.com/abtest");
         assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("No A/B Test"));
     }
 
-    public void WithOptOutUrl() throws InterruptedException {
+    public void withOptOutUrl() throws InterruptedException {
         driver.get("http://the-internet.herokuapp.com/abtest?optimizely_opt_out=true");
         driver.switchTo().alert().dismiss();
-
-        Thread.sleep(2000);
         assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("No A/B Test"));
-        Thread.sleep(2000);
     }
 }

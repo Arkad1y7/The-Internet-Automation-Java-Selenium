@@ -8,16 +8,16 @@ public class AbTest extends SeleniumBaseTest {
 
     @Test
     public void abTestAfter() {
-        AbTestingPage.Instance.WithCookieAfterVisitingPage();
+        AbTestingPage.Instance.withCookieAfterVisitingPage();
     }
 
     @Test
     public void abTestBefore() {
-        AbTestingPage.Instance.WithCookieBeforeVisitingPage();
+        AbTestingPage.Instance.withCookieBeforeVisitingPage();
     }
 
     @Test
     public void abTestWithOptOutUrl() throws InterruptedException {
-        AbTestingPage.Instance.WithOptOutUrl();
+        AbTestingPage.Instance.withOptOutUrl();
     }
 }
