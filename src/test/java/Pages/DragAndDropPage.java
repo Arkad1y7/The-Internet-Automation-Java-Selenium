@@ -21,7 +21,6 @@ public class DragAndDropPage extends SeleniumBasePage {
             System.out.println("FAIL: File couldn't be dropped to target as expected");
         }
     }
-
     private String jsScriptDragAndDrop() {
         return "var src = arguments[0], tgt = arguments[1];\n" +
                 "var dataTransfer = {\n" +
