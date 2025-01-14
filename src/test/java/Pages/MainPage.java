@@ -38,4 +38,5 @@ public class MainPage extends SeleniumBasePage {
     public void clickOnDragAndDrop() {
         driver.findElement(By.xpath("//*[contains(text(),'Drag and Drop')]")).click();
     }
+
 }

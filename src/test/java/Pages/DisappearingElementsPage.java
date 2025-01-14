@@ -11,9 +11,9 @@ public class DisappearingElementsPage extends SeleniumBasePage {
     public void buttonIsVisible() {
         try{
             WebElement galleryButton = driver.findElement(By.xpath("//*[contains(text(), 'Gallery')]"));
-            System.out.println("Element found");
+            System.out.println("PASS: Element found");
         } catch (Exception e) {
-            System.out.println("Element not found");
+            System.out.println("FAIL: Element not found");
         }
     }
 }

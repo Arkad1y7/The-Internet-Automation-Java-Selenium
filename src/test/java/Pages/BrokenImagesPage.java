@@ -15,7 +15,9 @@ public class BrokenImagesPage extends SeleniumBasePage {
 
         for(WebElement img : images){
             if(Objects.equals(img.getAttribute("naturalWidth"), "0")){
-                System.out.println("Broken Image " + img.getAttribute("src"));
+                System.out.println("FAIL: Broken Image " + img.getAttribute("src"));
+            }else{
+                System.out.println("PASS: All images ass downloaded on page");
             }
         }
     }
