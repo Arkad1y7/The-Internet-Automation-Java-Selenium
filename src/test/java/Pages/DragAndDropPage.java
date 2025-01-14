@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 public class DragAndDropPage extends SeleniumBasePage {
+    
     public static DragAndDropPage Instance = new DragAndDropPage();
 
     public void dragAndDropAtoB() {
