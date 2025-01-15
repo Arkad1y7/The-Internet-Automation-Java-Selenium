@@ -39,4 +39,7 @@ public class MainPage extends SeleniumBasePage {
         driver.findElement(By.xpath("//*[contains(text(),'Drag and Drop')]")).click();
     }
 
+    public void clickOnDropDown() {
+        driver.findElement(By.xpath("//*[contains(text(),'Dropdown')]")).click();
+    }
 }
