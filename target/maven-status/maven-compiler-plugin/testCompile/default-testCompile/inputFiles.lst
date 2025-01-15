@@ -7,6 +7,8 @@ C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\ContextMenuPage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\DisappearingElementsPage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\DragAndDropPage.java
+C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\DropdownPage.java
+C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\DynamicContentPage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\MainPage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\SeleniumBase\SeleniumBasePage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\SeleniumBase\SeleniumBaseTest.java
@@ -18,3 +20,6 @@ C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\CheckboxesTest.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\ContextMenuTest.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\DisappearingElementsTest.java
+C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\DragAndDropTest.java
+C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\DropdownTest.java
+C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\DynamicContentTest.java

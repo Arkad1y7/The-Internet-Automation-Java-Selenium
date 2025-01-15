@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Tests.BrokenImagesTest" time="5.809" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Tests.DragAndDropTest" time="7.225" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -59,15 +59,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testBrokenImages" classname="Tests.BrokenImagesTest" time="5.808">
-    <error message="FAIL: Broken Image http://the-internet.herokuapp.com/asdf.jpg" type="java.lang.Exception"><![CDATA[java.lang.Exception: FAIL: Broken Image http://the-internet.herokuapp.com/asdf.jpg
-	at Pages.BrokenImagesPage.checkImages(BrokenImagesPage.java:18)
-	at Tests.BrokenImagesTest.testBrokenImages(BrokenImagesTest.java:13)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-]]></error>
-    <system-out><![CDATA[PASS: Image downloade on page http://the-internet.herokuapp.com/img/forkme_right_green_007200.png
+  <testcase name="dragAndDropTest" classname="Tests.DragAndDropTest" time="7.224">
+    <system-out><![CDATA[PASS: File is dropped to target as expected
 ]]></system-out>
   </testcase>
 </testsuite>

@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 public class BrokenImagesTest extends SeleniumBaseTest {
 
     @Test
-    public void testBrokenImages() {
+    public void testBrokenImages() throws Exception {
         MainPage.Instance.clickOnBrokenImages();
         BrokenImagesPage.Instance.checkImages();
     }

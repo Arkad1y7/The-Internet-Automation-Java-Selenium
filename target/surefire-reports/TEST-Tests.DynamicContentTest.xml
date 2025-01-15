@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Tests.BrokenImagesTest" time="5.809" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Tests.DynamicContentTest" time="88.38" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -59,15 +59,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testBrokenImages" classname="Tests.BrokenImagesTest" time="5.808">
-    <error message="FAIL: Broken Image http://the-internet.herokuapp.com/asdf.jpg" type="java.lang.Exception"><![CDATA[java.lang.Exception: FAIL: Broken Image http://the-internet.herokuapp.com/asdf.jpg
-	at Pages.BrokenImagesPage.checkImages(BrokenImagesPage.java:18)
-	at Tests.BrokenImagesTest.testBrokenImages(BrokenImagesTest.java:13)
+  <testcase name="dynamicContentTest" classname="Tests.DynamicContentTest" time="77.801"/>
+  <testcase name="dynamicContentWithStaticTest" classname="Tests.DynamicContentTest" time="10.575">
+    <failure message="expected: not equal but was: &lt;Accusantium eius ut architecto neque vel voluptatem vel nam eos minus ullam dolores voluptates enim sed voluptatem rerum qui sapiente nesciunt aspernatur et accusamus laboriosam culpa tenetur hic aut placeat error autem qui sunt.&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: not equal but was: <Accusantium eius ut architecto neque vel voluptatem vel nam eos minus ullam dolores voluptates enim sed voluptatem rerum qui sapiente nesciunt aspernatur et accusamus laboriosam culpa tenetur hic aut placeat error autem qui sunt.>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNotEquals.failEqual(AssertNotEquals.java:277)
+	at org.junit.jupiter.api.AssertNotEquals.assertNotEquals(AssertNotEquals.java:263)
+	at org.junit.jupiter.api.AssertNotEquals.assertNotEquals(AssertNotEquals.java:258)
+	at org.junit.jupiter.api.Assertions.assertNotEquals(Assertions.java:2819)
+	at Pages.DynamicContentPage.checkEvent(DynamicContentPage.java:33)
+	at Tests.DynamicContentTest.dynamicContentWithStaticTest(DynamicContentTest.java:19)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-]]></error>
-    <system-out><![CDATA[PASS: Image downloade on page http://the-internet.herokuapp.com/img/forkme_right_green_007200.png
-]]></system-out>
+]]></failure>
   </testcase>
 </testsuite>
