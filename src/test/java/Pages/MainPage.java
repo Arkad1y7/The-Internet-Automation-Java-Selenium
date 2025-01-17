@@ -46,7 +46,12 @@ public class MainPage extends SeleniumBasePage {
     public void clickOnDynamicContent(){
         driver.findElement(By.xpath("//*[contains(text(),'Dynamic Content')]")).click();
     }
+
     public void clickOnDynamicContentWithStatic() {
         driver.get("https://the-internet.herokuapp.com/dynamic_content?with_content=static");
+    }
+
+    public void clickOnDynamicControls() {
+        driver.findElement(By.xpath("//*[contains(text(),'Dynamic Controls')]")).click();
     }
 }

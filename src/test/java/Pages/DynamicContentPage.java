@@ -18,7 +18,7 @@ public class DynamicContentPage extends SeleniumBasePage {
         for (int i = min; i < max; i++) {
             String text = driver.findElement(By.xpath("(//div[@class='row'])["+i+"]")).getText();
             String imgSrc = driver.findElement(By.xpath("(//div[@class='row'])["+i+"]//img")).getAttribute("src");
-            elements.add(new element(text,imgSrc));
+            elements.add(new element(text, imgSrc));
         }
 
         driver.navigate().refresh();
@@ -26,7 +26,7 @@ public class DynamicContentPage extends SeleniumBasePage {
         for (int i = min; i < max; i++) {
             String text = driver.findElement(By.xpath("(//div[@class='row'])["+i+"]")).getText();
             String imgSrc = driver.findElement(By.xpath("(//div[@class='row'])["+i+"]//img")).getAttribute("src");
-            elementsAfterRefresh.add(new element(text,imgSrc));
+            elementsAfterRefresh.add(new element(text, imgSrc));
         }
 
         for (int i = 0; i < max-min; i++) {
@@ -38,14 +38,8 @@ public class DynamicContentPage extends SeleniumBasePage {
         }
     }
 
-    private class element {
-        private String text;
-        private String imgSrc;
+    private record element(String text, String imgSrc) {
 
-        public element(String text, String imgSrc) {
-            this.text = text;
-            this.imgSrc = imgSrc;
-        }
     }
 }
 
