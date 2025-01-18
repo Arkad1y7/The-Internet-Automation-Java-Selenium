@@ -10,6 +10,7 @@ Pages\ContextMenuPage.class
 Pages\DynamicContentPage.class
 Tests\AbTest.class
 Pages\AbTestingPage.class
+Pages\DynamicControlsPage.class
 Pages\CheckboxesPage.class
 Tests\DisappearingElementsTest.class
 Pages\DropdownPage.class
@@ -19,6 +20,7 @@ Pages\MainPage.class
 Tests\DropdownTest.class
 Pages\DragAndDropPage.class
 SeleniumBase\SeleniumBaseTest.class
+Tests\DynamicControlsTest.class
 Pages\DynamicContentPage$element.class
 Tests\DynamicContentTest.class
 Tests\BrokenImagesTest.class
