@@ -10,6 +10,10 @@ public class BrokenImagesPage extends SeleniumBasePage {
 
     public static BrokenImagesPage Instance = new BrokenImagesPage();
 
+    public void enterThePage(){
+        driver.get("https://the-internet.herokuapp.com/broken_images");
+    }
+
     public void checkImages() throws Exception {
         List<WebElement> images = driver.findElements(By.tagName("img"));
 

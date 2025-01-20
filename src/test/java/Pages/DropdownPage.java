@@ -10,6 +10,10 @@ import java.util.List;
 public class DropdownPage extends SeleniumBasePage {
     public static DropdownPage Instance = new DropdownPage();
 
+    public void enterThePage(){
+        driver.get("https://the-internet.herokuapp.com/dropdown");
+    }
+
     public void dropdownAll() { // the method selects all the elements in turn
         WebElement dropdown = driver.findElement(By.id("dropdown"));
         List<WebElement> options = dropdown.findElements(By.tagName("option"));

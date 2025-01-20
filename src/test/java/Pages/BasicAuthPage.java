@@ -2,14 +2,25 @@ package Pages;
 
 import SeleniumBase.SeleniumBasePage;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.time.Duration;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 public class BasicAuthPage extends SeleniumBasePage {
 
     public static BasicAuthPage Instance = new BasicAuthPage();
+
+    public void enterThePage(){
+        driver.get("https://the-internet.herokuapp.com/basic_auth");
+    }
 
     public void robotAuth() throws AWTException {
         Robot robot = new Robot();
@@ -18,9 +29,11 @@ public class BasicAuthPage extends SeleniumBasePage {
         tab(robot);
         admin(robot);
         enter(robot);
+    }
 
-        String headingText = driver.findElement(By.tagName("h3")).getText();
-        assertThat(headingText, is("Basic Auth"));
+    public void assertText(){
+        String pageMessage = driver.findElement(By.xpath("/html/body/div[2]/div/div/p")).getText();
+        assertThat(pageMessage, containsString("Congratulations!"));
     }
 
     void admin(Robot robot) {

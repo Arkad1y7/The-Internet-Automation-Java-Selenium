@@ -7,6 +7,10 @@ public class AddRemovePage extends SeleniumBasePage {
 
     public static AddRemovePage Instance = new AddRemovePage();
 
+    public void enterThePage(){
+        driver.get("https://the-internet.herokuapp.com/add_remove_elements/");
+    }
+
     public void addElement() {
         driver.findElement(By.xpath("//*[@id=\"content\"]/div/button")).click();
     }

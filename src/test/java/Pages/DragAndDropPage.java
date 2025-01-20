@@ -9,6 +9,10 @@ public class DragAndDropPage extends SeleniumBasePage {
 
     public static DragAndDropPage Instance = new DragAndDropPage();
 
+    public void enterThePage(){
+        driver.get("https://the-internet.herokuapp.com/drag_and_drop");
+    }
+
     public void dragAndDropAtoB() {
         WebElement columnA = driver.findElement(By.id("column-a"));
         WebElement columnB = driver.findElement(By.id("column-b"));

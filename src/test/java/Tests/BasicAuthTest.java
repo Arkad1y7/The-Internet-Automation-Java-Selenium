@@ -1,7 +1,6 @@
 package Tests;
 
 import Pages.BasicAuthPage;
-import Pages.MainPage;
 import SeleniumBase.SeleniumBaseTest;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +10,8 @@ public class BasicAuthTest extends SeleniumBaseTest {
 
     @Test
     public void testBasicAuth() throws AWTException {
-        MainPage.Instance.clickOnBasicAuth();
+        BasicAuthPage.Instance.enterThePage();
         BasicAuthPage.Instance.robotAuth();
+        BasicAuthPage.Instance.assertText();
     }
 }

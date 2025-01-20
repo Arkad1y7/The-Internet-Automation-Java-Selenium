@@ -10,6 +10,7 @@ C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\DropdownPage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\DynamicContentPage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\DynamicControlsPage.java
+C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\DynamicLoadingPage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\MainPage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\SeleniumBase\SeleniumBasePage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\SeleniumBase\SeleniumBaseTest.java
@@ -25,3 +26,4 @@ C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\DropdownTest.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\DynamicContentTest.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\DynamicControlsTest.java
+C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\DynamicLoadingTest.java

@@ -9,7 +9,12 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class DynamicContentPage extends SeleniumBasePage {
+
     public static DynamicContentPage Instance = new DynamicContentPage();
+
+    public void enterThePage(){
+        driver.get("https://the-internet.herokuapp.com/dynamic_content");
+    }
 
     public void checkEvent(int min, int max) {
         List<element> elements = new ArrayList<>();
@@ -38,8 +43,6 @@ public class DynamicContentPage extends SeleniumBasePage {
         }
     }
 
-    private record element(String text, String imgSrc) {
-
-    }
+    private record element(String text, String imgSrc) { }
 }
 

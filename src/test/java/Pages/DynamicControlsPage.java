@@ -13,6 +13,10 @@ public class DynamicControlsPage extends SeleniumBasePage{
 
     public static DynamicControlsPage Instance = new DynamicControlsPage();
 
+    public void enterThePage(){
+        driver.get("https://the-internet.herokuapp.com/dynamic_controls");
+    }
+
     public void RemoveAdd() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 

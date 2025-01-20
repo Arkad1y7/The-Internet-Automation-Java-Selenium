@@ -3,6 +3,7 @@ package SeleniumBase;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
@@ -13,10 +14,10 @@ abstract public class SeleniumBaseTest {
 
     @BeforeEach
     public void setUp() {
-        driver = new FirefoxDriver();
+        driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         SeleniumBasePage.setDriver(driver);
         driver.get("http://the-internet.herokuapp.com/");
     }

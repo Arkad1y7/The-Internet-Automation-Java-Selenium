@@ -11,6 +11,10 @@ public class ContextMenuPage extends SeleniumBasePage {
 
     public static ContextMenuPage Instance = new ContextMenuPage();
 
+    public void enterThePage(){
+        driver.get("https://the-internet.herokuapp.com/context_menu");
+    }
+
     public void clickContextMenu() {
         new Actions(driver)
                 .contextClick(driver.findElement(By.xpath("//*[@id = 'hot-spot']")))

@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: Tests.BrokenImagesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.014 s <<< FAILURE! -- in Tests.BrokenImagesTest
-Tests.BrokenImagesTest.testBrokenImages -- Time elapsed: 7.011 s <<< ERROR!
-java.lang.Exception: FAIL: Broken Image http://the-internet.herokuapp.com/asdf.jpg
-	at Pages.BrokenImagesPage.checkImages(BrokenImagesPage.java:18)
-	at Tests.BrokenImagesTest.testBrokenImages(BrokenImagesTest.java:13)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.870 s <<< FAILURE! -- in Tests.BrokenImagesTest
+Tests.BrokenImagesTest.testBrokenImages -- Time elapsed: 8.869 s <<< ERROR!
+java.lang.Exception: FAIL: Broken Image https://the-internet.herokuapp.com/asdf.jpg
+	at Pages.BrokenImagesPage.checkImages(BrokenImagesPage.java:22)
+	at Tests.BrokenImagesTest.testBrokenImages(BrokenImagesTest.java:12)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)

@@ -18,6 +18,10 @@ public class CheckboxesPage extends SeleniumBasePage {
         PageFactory.initElements(driver, this);
     }
 
+    public void enterThePage(){
+        driver.get("https://the-internet.herokuapp.com/checkboxes");
+    }
+
     public void TwoCheckboxes() {
         secondCheckbox.click(); // кликаю по второму чтобы проверить оба чекбокса
 

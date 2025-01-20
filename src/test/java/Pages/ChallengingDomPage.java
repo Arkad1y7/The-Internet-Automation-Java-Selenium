@@ -7,6 +7,10 @@ public class ChallengingDomPage extends SeleniumBasePage {
 
     public static ChallengingDomPage Instance = new ChallengingDomPage();
 
+    public void enterThePage(){
+        driver.get("https://the-internet.herokuapp.com/challenging_dom");
+    }
+
     public void clickBlueButton() {
         driver.findElement(By.xpath("//*[@class=\"button\"]")).click();
     }

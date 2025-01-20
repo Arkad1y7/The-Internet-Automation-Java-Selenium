@@ -1,4 +1,5 @@
 Pages\ChallengingDomPage.class
+Pages\DynamicLoadingPage.class
 Pages\DisappearingElementsPage.class
 Tests\AddRemoveElementsTest.class
 Tests\ContextMenuTest.class
@@ -13,6 +14,7 @@ Pages\AbTestingPage.class
 Pages\DynamicControlsPage.class
 Pages\CheckboxesPage.class
 Tests\DisappearingElementsTest.class
+Tests\DynamicLoadingTest.class
 Pages\DropdownPage.class
 Pages\AddRemovePage.class
 Pages\BrokenImagesPage.class
