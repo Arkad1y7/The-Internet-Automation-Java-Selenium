@@ -14,7 +14,7 @@ abstract public class SeleniumBaseTest {
 
     @BeforeEach
     public void setUp() {
-        driver = new EdgeDriver();
+        driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(100));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

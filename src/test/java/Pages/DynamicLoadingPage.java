@@ -16,12 +16,23 @@ public class DynamicLoadingPage extends SeleniumBasePage {
         driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");
     }
 
-    public void DynamicallyLoadedPageElements() {
+    public void ElementOnPageThatIsHidden() {
         driver.findElement(By.xpath("//*[@id = 'start']/button")).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         try {
             wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id=\"finish\"]/h4"))));
-            System.out.println("PASS: Hello word on the page!");
+            System.out.println("PASS: Hello world on the page!");
+        }catch (TimeoutException e){
+            throw new TimeoutException("Error", e);
+        }
+    }
+
+    public void ElementRenderedAfterTheFact(){
+        driver.findElement(By.xpath("//*[@id = 'start']/button")).click();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        try {
+            wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@id=\"finish\"]/h4"))));
+            System.out.println("PASS: Hello world on the page!");
         }catch (TimeoutException e){
             throw new TimeoutException("Error", e);
         }

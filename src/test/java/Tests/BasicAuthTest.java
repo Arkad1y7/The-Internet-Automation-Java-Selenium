@@ -11,7 +11,6 @@ public class BasicAuthTest extends SeleniumBaseTest {
     @Test
     public void testBasicAuth() throws AWTException {
         BasicAuthPage.Instance.enterThePage();
-        BasicAuthPage.Instance.robotAuth();
         BasicAuthPage.Instance.assertText();
     }
 }
