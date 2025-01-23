@@ -7,14 +7,14 @@ import org.junit.jupiter.api.Test;
 public class DynamicControlsTest extends SeleniumBaseTest {
 
     @Test
-    public void DynamicControlsRemoveAddTest() {
+    public void dynamicControlsRemoveAddTest() {
         DynamicControlsPage.Instance.enterThePage();
-        DynamicControlsPage.Instance.RemoveAdd();
+        DynamicControlsPage.Instance.removeAdd();
     }
 
     @Test
-    public void DynamicControlsEnableDisableTest() {
+    public void dynamicControlsEnableDisableTest() {
         DynamicControlsPage.Instance.enterThePage();
-        DynamicControlsPage.Instance.EnableDisable();
+        DynamicControlsPage.Instance.enableDisable();
     }
 }

@@ -7,14 +7,14 @@ import org.junit.jupiter.api.Test;
 public class DynamicLoadingTest extends SeleniumBaseTest {
 
     @Test
-    public void DynamicLoadingAfterTheFactTest() {
+    public void dynamicLoadingAfterTheFactTest() {
         DynamicLoadingPage.Instance.enterThePage();
-        DynamicLoadingPage.Instance.ElementRenderedAfterTheFact();
+        DynamicLoadingPage.Instance.elementRenderedAfterTheFact();
     }
 
     @Test
-    public void DynamicLoadingThatIsHiddenTest() {
+    public void dynamicLoadingThatIsHiddenTest() {
         DynamicLoadingPage.Instance.enterThePage();
-        DynamicLoadingPage.Instance.ElementOnPageThatIsHidden();
+        DynamicLoadingPage.Instance.elementOnPageThatIsHidden();
     }
 }

@@ -16,7 +16,7 @@ public class DynamicLoadingPage extends SeleniumBasePage {
         driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");
     }
 
-    public void ElementOnPageThatIsHidden() {
+    public void elementOnPageThatIsHidden() {
         driver.findElement(By.xpath("//*[@id = 'start']/button")).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         try {
@@ -27,7 +27,7 @@ public class DynamicLoadingPage extends SeleniumBasePage {
         }
     }
 
-    public void ElementRenderedAfterTheFact(){
+    public void elementRenderedAfterTheFact(){
         driver.findElement(By.xpath("//*[@id = 'start']/button")).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         try {

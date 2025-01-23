@@ -17,7 +17,7 @@ public class DynamicControlsPage extends SeleniumBasePage{
         driver.get("https://the-internet.herokuapp.com/dynamic_controls");
     }
 
-    public void RemoveAdd() {
+    public void removeAdd() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
         WebElement checkbox = driver.findElement(By.cssSelector("input[type='checkbox']"));
@@ -38,7 +38,7 @@ public class DynamicControlsPage extends SeleniumBasePage{
         }
     }
 
-    public void EnableDisable() {
+    public void enableDisable() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
         driver.findElement(By.cssSelector("button[onclick = 'swapInput()']")).click();
 

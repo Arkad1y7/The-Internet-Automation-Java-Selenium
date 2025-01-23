@@ -9,6 +9,6 @@ public class CheckboxesTest extends SeleniumBaseTest {
     @Test
     public void checkboxesTest() {
         CheckboxesPage.Instance.enterThePage();
-        CheckboxesPage.Instance.TwoCheckboxes();
+        CheckboxesPage.Instance.twoCheckboxes();
     }
 }

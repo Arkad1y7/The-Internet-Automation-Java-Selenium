@@ -22,7 +22,7 @@ public class CheckboxesPage extends SeleniumBasePage {
         driver.get("https://the-internet.herokuapp.com/checkboxes");
     }
 
-    public void TwoCheckboxes() {
+    public void twoCheckboxes() {
         secondCheckbox.click(); // кликаю по второму чтобы проверить оба чекбокса
 
         if(firstCheckbox.getAttribute("checked") == null) {
