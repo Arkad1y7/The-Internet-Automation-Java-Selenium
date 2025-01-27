@@ -12,13 +12,13 @@ Pages\DynamicContentPage.class
 Tests\AbTest.class
 Pages\AbTestingPage.class
 Pages\DynamicControlsPage.class
+Pages\EntryAdPage.class
 Pages\CheckboxesPage.class
 Tests\DisappearingElementsTest.class
 Tests\DynamicLoadingTest.class
 Pages\DropdownPage.class
 Pages\AddRemovePage.class
 Pages\BrokenImagesPage.class
-Pages\MainPage.class
 Tests\DropdownTest.class
 Pages\DragAndDropPage.class
 SeleniumBase\SeleniumBaseTest.class
@@ -28,3 +28,4 @@ Tests\DynamicContentTest.class
 Tests\BrokenImagesTest.class
 Tests\CheckboxesTest.class
 SeleniumBase\SeleniumBasePage.class
+Tests\EntryAdTest.class

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: Tests.CheckboxesTest
+Test set: Tests.EntryAdTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.177 s -- in Tests.CheckboxesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.17 s -- in Tests.EntryAdTest

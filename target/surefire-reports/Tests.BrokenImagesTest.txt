@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: Tests.BrokenImagesTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.870 s <<< FAILURE! -- in Tests.BrokenImagesTest
-Tests.BrokenImagesTest.testBrokenImages -- Time elapsed: 8.869 s <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.175 s <<< FAILURE! -- in Tests.BrokenImagesTest
+Tests.BrokenImagesTest.testBrokenImages -- Time elapsed: 9.172 s <<< ERROR!
 java.lang.Exception: FAIL: Broken Image https://the-internet.herokuapp.com/asdf.jpg
 	at Pages.BrokenImagesPage.checkImages(BrokenImagesPage.java:22)
 	at Tests.BrokenImagesTest.testBrokenImages(BrokenImagesTest.java:12)

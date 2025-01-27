@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: Tests.DynamicContentTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.23 s <<< FAILURE! -- in Tests.DynamicContentTest
-Tests.DynamicContentTest.dynamicContentWithStaticTest -- Time elapsed: 10.96 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: not equal but was: <https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-1.jpg>
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 23.40 s <<< FAILURE! -- in Tests.DynamicContentTest
+Tests.DynamicContentTest.dynamicContentWithStaticTest -- Time elapsed: 11.40 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: not equal but was: <https://the-internet.herokuapp.com/img/avatars/Original-Facebook-Geek-Profile-Avatar-6.jpg>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
 	at org.junit.jupiter.api.AssertNotEquals.failEqual(AssertNotEquals.java:277)

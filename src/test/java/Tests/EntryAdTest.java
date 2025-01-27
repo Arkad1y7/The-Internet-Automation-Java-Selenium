@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 public class EntryAdTest extends SeleniumBaseTest {
 
     @Test
-    public void EntryAdTest() {
+    public void EntryADTest() {
         EntryAdPage.Instance.enterThePage();
         EntryAdPage.Instance.entryAdWindow();
     }
