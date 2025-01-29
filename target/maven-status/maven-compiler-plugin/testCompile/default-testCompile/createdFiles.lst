@@ -6,6 +6,7 @@ Tests\ContextMenuTest.class
 Tests\ChallengingDomTest.class
 Tests\BasicAuthTest.class
 Tests\DragAndDropTest.class
+Pages\ExitIntentPage.class
 Pages\BasicAuthPage.class
 Pages\ContextMenuPage.class
 Pages\DynamicContentPage.class
@@ -13,6 +14,7 @@ Tests\AbTest.class
 Pages\AbTestingPage.class
 Pages\DynamicControlsPage.class
 Pages\EntryAdPage.class
+Tests\FileDownloadTest.class
 Pages\CheckboxesPage.class
 Tests\DisappearingElementsTest.class
 Tests\DynamicLoadingTest.class
@@ -20,9 +22,11 @@ Pages\DropdownPage.class
 Pages\AddRemovePage.class
 Pages\BrokenImagesPage.class
 Tests\DropdownTest.class
+Pages\FileDownloadPage.class
 Pages\DragAndDropPage.class
 SeleniumBase\SeleniumBaseTest.class
 Tests\DynamicControlsTest.class
+Tests\ExitIntentTest.class
 Pages\DynamicContentPage$element.class
 Tests\DynamicContentTest.class
 Tests\BrokenImagesTest.class

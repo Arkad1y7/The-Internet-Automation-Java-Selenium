@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Tests.ContextMenuTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.628 s -- in Tests.ContextMenuTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.222 s -- in Tests.ContextMenuTest

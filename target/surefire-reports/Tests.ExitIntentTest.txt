@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: Tests.EntryAdTest
+Test set: Tests.ExitIntentTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.605 s -- in Tests.EntryAdTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.202 s -- in Tests.ExitIntentTest

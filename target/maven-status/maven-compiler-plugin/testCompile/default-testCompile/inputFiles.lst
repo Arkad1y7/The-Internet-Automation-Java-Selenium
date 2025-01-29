@@ -12,6 +12,8 @@ C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\DynamicControlsPage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\DynamicLoadingPage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\EntryAdPage.java
+C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\ExitIntentPage.java
+C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Pages\FileDownloadPage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\SeleniumBase\SeleniumBasePage.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\SeleniumBase\SeleniumBaseTest.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\AbTest.java
@@ -28,3 +30,5 @@ C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\DynamicControlsTest.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\DynamicLoadingTest.java
 C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\EntryAdTest.java
+C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\ExitIntentTest.java
+C:\Users\arkad\IdeaProjects\The-Internet-Automation-Java-Selenium\src\test\java\Tests\FileDownloadTest.java
